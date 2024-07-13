@@ -7,6 +7,9 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    display: grid;
+	min-height: 100vh;
+	background: #ffffff;
 }
 
 /* CABEÇALHO/HEADER */
@@ -160,7 +163,7 @@ header {
     text-align: center;
 }
 
-@media (max-width: 802px) {
+@media (max-width: 970px) {
     .menu-icon {
         display: block;
         position: absolute;
@@ -206,7 +209,7 @@ header {
     }
 }
 
-@media (min-width: 802px) {
+@media (min-width: 970px) {
     .menu-icon {
         display: none; 
     }
@@ -219,5 +222,104 @@ header {
         padding: 20px; 
     }
 }
-
 /* FIM CABEÇALHO/HEADER */
+
+/* CARDS FLEXÍVEIS */
+
+.container {
+    display: flex;
+    height: calc(650px - 90px);
+    width: 100%;
+    background-color: #ffffff;
+    padding-top: 90px;
+}
+
+.box {
+    flex: 1;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    max-width: 1000px;
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-out;
+}
+
+.box:hover img {
+    transform: scale(1.2);
+}
+
+.box::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 350px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+}
+
+.texto {
+    color: #fff;
+    position: absolute;
+    bottom: 60px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.texto h2 {
+    font-style: italic;
+}
+
+.texto p {
+    margin-left: 20px;
+    margin-top: 5px;
+    text-indent: 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.box:hover .texto p {
+    opacity: 1;
+}
+
+@media (max-width: 445px) {
+    .container {
+        flex-direction: column;
+        height: 600px;
+        padding-top: 90px;
+    }
+
+    .box {
+        flex: 1;
+        height: 100%;
+        width: 100%;
+    }
+
+    .texto {
+        bottom: 1px;
+    }
+
+    .texto p {
+        opacity: 0.8;
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .mobile-only {
+        display: block;
+    }
+
+    .texto h2 {
+        font-size: 22px;
+    }
+}
+/* FIM DOS CARDS FLEXÍVEIS */
