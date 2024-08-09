@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icons/favicon.ico">
     <title>RM Diesel</title>
 </head>
 <body>
@@ -16,19 +17,23 @@
         <div class="logo">
             <img src="imagens/logorm200.png" alt="Logo RM Diesel">
         </div>
+        <div class="bandeira">
+            <img src="icons/bandeira.png" alt="Bandeira do Brasil">
+        </div>
         <input type="checkbox" id="menu-toggle" class="menu-toggle">
         <label for="menu-toggle" class="menu-icon">&#9776;</label>
         <nav class="nav">
             <ul class="nav-list">
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Contato</a></li>
-                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="sobrenos.html">Sobre Nós</a></li>
                 <li class="sociais">
                     <button class="botão1">
                         <a target="_blank" href="https://www.instagram.com/rminjecaoeletronicadiesel"><img src="icons/instagram.png" alt="Logo Instagram"></a>
                     </button>
                     <button class="botão2">
-                        <a target="_blank" href="#"><img src="icons/localizacao.png" alt="Logo localização"></a>
+                        <a target="_blank" href="https://www.google.com/maps/place/22%C2%B015'29.1%22S+54%C2%B046'39.9%22W/@-22.25807,-54.7783797,19z/data=!3m1!4b1!4m13!1m8!3m7!1s0x948908042bf92fb9:0x90cd76f91563f712!2sR.+Isabel+Cardoso+Miranda+-+Jardim+Guaicurus,+Dourados+-+MS,+79837-016!3b1!8m2!3d-22.2611535!4d-54.7772305!16s%2Fg%2F11jx0jrb6f!3m3!8m2!3d-22.25807!4d-54.777736?hl=pt-BR&entry=ttu"><img src="icons/localizacao.png" alt="Logo localização"></a>
                     </button>
                 </li>
             </ul>
@@ -40,21 +45,21 @@
     <section class="cards">
         <div class="container">
             <div class="box">
-                <img src="imagens/caminhonete.jpg" alt="">
+                <img src="imagens/caminhonete.jpg" alt="Foto de uma caminhonete">
                 <div class="texto">
                     <h2>Linha Leve</h2>
                     <p>Serviços de manutenção e diagnóstico para veículos leves, garantindo eficiência e economia de combustível</p>
                 </div>
             </div>
             <div class="box">
-                <img src="imagens/caminhão.jpg" alt="">
+                <img src="imagens/caminhao.png" alt="Foto de um caminhão">
                 <div class="texto">
                     <h2>Linha Pesada</h2>
                     <p>Especializados em frotas pesadas, oferecendo soluções para maximizar o desempenho e a durabilidade dos veículos</p>
                 </div>
             </div>
             <div class="box">
-                <img src="imagens/colheitadeira.jpg" alt="">
+                <img src="imagens/colheitadeira.jpg" alt="Foto de ima colheitadeira">
                 <div class="texto">
                     <h2>Linha Agrícola</h2>
                     <p>Manutenção e reparo de máquinas agrícolas, otimizando a performance para uma colheita mais produtiva</p>
@@ -63,6 +68,78 @@
         </div>
     </section>
     <!-- FIM DOS CARDS FLEXÍVEIS -->
+
+    <!-- BANNER DE REPROGRAMAÇÃO -->
+    <section class="reprogramação">
+        <div class="banner">
+            <div class="coluna1">
+                <h1>REPROGRAMAÇÃO<br>
+                    + POTÊNCIA E ECONOMIA
+                </h1>
+                <p>Nos destacamos na reprogramação de ECU (Unidade de Controle Eletrônico) para veículos a diesel. Fornecemos serviços personalizados para otimizar o desempenho e a eficiência do seu motor a diesel, sempre preservando a segurança e a longevidade do seu veículo.</p> 
+                <p>Aplicamos ajustes personalizados, utilizando tecnologia de ponta para garantir que cada reprogramação atenda aos mais altos padrões de performance e eficiência. Nosso compromisso é entregar resultados que não só melhoram a performance do seu veículo, mas também assegurar que ele continue operando com a mesma confiabilidade e segurança que você espera.</p>
+            </div>
+            <div class="coluna2">
+                <img src="imagens/reprogramação.jpg" alt="Imagem de reprogramação">
+            </div>
+        </div>
+    </section>
+    <!-- FIM DO BANNER DE REPROGRAMAÇÃO -->
+
+    <!-- LISTA DE SERVIÇOS -->
+    <section class="serviços">
+        <img src="imagens/servicosimg.png" alt="Imagem de veiculos a diesel">
+        <h1>REPARAÇÃO DIESEL COMPLETA</h1>
+        <div class="lista-serviços">
+            <div class="lista img1">
+                <img src="imagens/unidade.jpg" alt="">
+                <h4>UNIDADES INJETORAS</h4>
+            </div>
+            <div class="lista img2">  
+                <img src="imagens/bico.jpg" alt="">
+                <h4>BICOS INJETORES</h4>
+            </div>
+            <div class="lista img3">
+                <img src="imagens/bombadealta.jpg" alt="">
+                <h4>BOMBAS DE ALTA PRESSÃO</h4>
+            </div>
+            <div class="lista img4">
+                <img src="imagens/bombainjetora.jpg" alt="">
+                <h4>BOMBAS INJETORAS</h4>
+            </div>
+        </div>
+        <a href="servicos.html">
+        <button class="bto-serviços">
+            <h2>Serviços</h2>
+        </button>
+        </a>
+    </section>
+    <!-- FIM DA LIST DE SERVIÇOS -->
+
+    <!-- RODAPÉ -->
+    <footer>
+        <div class="informações">
+            <h3>RM Injeção eletrônica diesel</h3>
+            <p>R. Isabel Cardoso Miranda, 600 - Jardim Ibirapuera <br> Dourados-MS - CEP: 79837-016</p>
+            <h2>(67) 9 9869-5593</h2>
+        </div>
+        <div class="email">
+            <p>© RM Diesel</p>
+            <p>Email: rmdiesel01@hotmail.com</p>
+            </a>
+        </div>
+    </footer>
+    <!-- FIM DO RODAPÉ -->
+
+    <!-- BOTÃO DO WHATSAPP -->
+    <div class="bto-whatsapp">
+        <a target="_blank" href="https://web.whatsapp.com/send?phone=67998695593&text=Olá, gostaria de mais inforomações sobre os serviços da RM Diesel.">
+            <button>
+                <img src="icons/whatsapp.png" alt="Logo Whatsapp">
+            </button>
+        </a>
+    </div>
+    <!-- FIM DO BOTÃO DO WHATSAPP -->
 
 </body>
 </html>
