@@ -143,7 +143,7 @@ header {
     width: 100vw; 
     height: 1px;
     background-color: #ff0000; 
-    transform: translateX(-80px);
+    transform: translateX(-93px);
 }
 
 .menu-toggle:checked ~ .nav .nav-list li:last-child::after {
@@ -590,8 +590,8 @@ footer{
     .informações h2 {
         color: inherit !important;
         text-decoration: none !important;
-        font: inherit !important; /* Garante que a fonte seja herdada e não modificada */
-        pointer-events: none !important; /* Desativa a funcionalidade de link */
+        font: inherit !important; 
+        pointer-events: none !important; 
     }
     
     .informações h2 a {
@@ -600,7 +600,6 @@ footer{
         pointer-events: none !important;
     }
     
-    /* Força o número a ser tratado como texto puro */
     .informações h2 {
         display: inline-block !important;
         white-space: nowrap !important;
@@ -701,6 +700,26 @@ footer{
 
     .aba p {
         font-size: 0.9em;
+    }
+}
+
+@media (max-width: 768px) {
+    .aba.contato h3 {
+        color: inherit !important;
+        text-decoration: none !important;
+        font: inherit !important;
+        pointer-events: none !important;
+    }
+
+    .aba.contato h3 a {
+        color: inherit !important;
+        text-decoration: none !important;
+        pointer-events: none !important;
+    }
+    
+    .aba.contato h3 {
+        display: inline-block !important;
+        white-space: nowrap !important;
     }
 }
 /* FIM DAS PÁGINAS ADICIONAIS */
