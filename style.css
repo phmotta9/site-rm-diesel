@@ -587,10 +587,26 @@ footer{
         color: #ffffff; 
     }
 
-    .informações h2{
-        color: inherit;
+    .informações h2 {
+        color: inherit !important;
+        text-decoration: none !important;
+        font: inherit !important; /* Garante que a fonte seja herdada e não modificada */
+        pointer-events: none !important; /* Desativa a funcionalidade de link */
+    }
+    
+    .informações h2 a {
+        color: inherit !important;
+        text-decoration: none !important;
+        pointer-events: none !important;
+    }
+    
+    /* Força o número a ser tratado como texto puro */
+    .informações h2 {
+        display: inline-block !important;
+        white-space: nowrap !important;
     }
 }
+
 /* FIM DO RODAPÉ */
 
 /* BOTÃO DO WHATSAPP */
