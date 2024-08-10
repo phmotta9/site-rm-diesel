@@ -570,17 +570,6 @@ footer{
     font-size: 20px;
 }
 
-.informações h2 {
-    color: inherit; /* Mantém a cor herdada */
-    text-decoration: none; /* Remove qualquer sublinhado */
-}
-
-.informações h2 a {
-    color: inherit; /* Garante que a cor permaneça a mesma */
-    text-decoration: none; /* Remove sublinhado em links */
-    pointer-events: none; /* Desativa o link clicável */
-}
-
 .email{
     font-size: 12px;
 }
