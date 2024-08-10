@@ -583,7 +583,12 @@ footer{
     }
 
     .informações {
-        text-align: center; 
+        text-align: center;
+        color: #ffffff; 
+    }
+
+    .informações h2{
+        text-decoration: none;
     }
 }
 /* FIM DO RODAPÉ */
