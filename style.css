@@ -612,6 +612,23 @@ footer{
     height: 100px;
 }
 
+.mobile-link {
+    display: none;
+}
+
+.desktop-link {
+    display: inline-block;
+}
+
+@media screen and (max-width: 768px) {
+    .desktop-link {
+        display: none;
+    }
+    .mobile-link {
+        display: inline-block;
+    }
+}
+
 @media (max-width: 768px) {
     .bto-whatsapp {
         bottom: 10px; 
