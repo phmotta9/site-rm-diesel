@@ -589,6 +589,8 @@ footer{
 
     .informações h2{
         text-decoration: none;
+        color: inherit;
+        pointer-events: none;
     }
 }
 /* FIM DO RODAPÉ */
