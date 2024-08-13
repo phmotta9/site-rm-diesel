@@ -325,12 +325,20 @@ header {
         width: 100%;
     }
 
+    .box:hover img {
+        transform: none;
+    }
+    
+    .box:hover .texto p {
+        opacity: 0.8; 
+    }
+    
     .texto {
         bottom: 1px;
     }
 
     .texto p {
-        opacity: 0.8;
+        opacity: 0.8 !important;
         font-size: 15px;
         font-weight: 400;
         font-style: italic;
