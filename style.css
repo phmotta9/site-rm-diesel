@@ -618,6 +618,10 @@ footer{
         display: inline-block !important;
         white-space: nowrap !important;
     }
+
+    .email{
+        text-align: center;
+    }
 }
 
 /* FIM DO RODAPÉ */
